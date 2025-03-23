@@ -2,55 +2,178 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Evan Blankenship's Project Website</title>
-        <link href="style.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scalce=1.0">
+        <title>Evan Blankenship Portfolio Website</title>
+        <link rel="stylesheet" href="style.css" >
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            crossorigin="anonymous"
+        />
     </head>
     <body>
-        <header>
-            <h1>Evan Blankenship's Personal Website</h1>
-
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About Me</a>
-            <a href="./projects.html">My Projects</a>
-            <a href="./playground.html">Playground</a>
+        <header class="header">
+            <div class="header_content">
+                <div class="header_logo"><a href="./">
+                    <img src="assets/Evan_Blankenship_zoomed.jpg" class="header_logo_content" />
+                    <h2 class="header_logo_content">Evan Blankenship</h2>
+                </a></div>
+                <div class="nav">
+                    <nav id="nav-list">
+                        <ul>
+                            <li class="header_links"><a href="#welcome-section">Home</a></li>
+                            <li class="header_links"><a href="#about">About</a></li>
+                            <li class="header_links"><a href="#projects">Projects</a></li>
+                            <li class="header_links"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
-        <div id="about">
-            <div class="pitch">
-                <h2>About me</h2>
-                <img src="media/Evan_Blankenship.jpg" alt="Evan Blankenship" style="width: 25%; height: 10%"/>
-                <p>I am currently a student at Northeastern University working towards a Bachelor of Science in Computer Science. 
-                I have previous experience working with Java, and I am currently learning Python and C, as well as working with Linux. 
-                I love learning about new technologies and testing myself with challenges.</p>
+        <main>
+            <section id="welcome-section" class="section-pad">
+                <div class="home-section">
+                    <div id="welcome-info">
+                        <h1 class="home-name">Hello, I'm Evan Blankenship</h1>
+                        <p>
+                            Computer Science student and aspiring software developer
+                        </p>
+                    </div>
+                    <div id="button" class="home-button btn-mv">
+                        <a class="button" href="#projects">
+                            Projects
+                        </a>
+                    </div> 
+                </div>
+            </section>
+            <section id="about" class="section-pad">
+                <div class="main-container about">
+                    <div class="about header">
+                        <h2 class="about title">About Me</h2>
+                        <span>Who I am, What I do, and What are some of my skills</span>
+                    </div>
+                    <div class="about-container">
+                        <div class="know-me">
+                            <h3>Get to know me</h3>
+                            <p class="about-paragraph">I am a junior software developer, currently located in Boston, MA. I love pushing myself by learning new things and trying my hand at new challenges. I'm also a student at <a>Northeastern University</a> studying computer science. I am currently teaching myself WebDev and JavaScript, but have experience with developing in Java and Python as well.</p>
+                            <a href="#contact" class="button button-contact btn-mv">Contact</a>
+                        </div>
+                        <div class="skills">
+                            <h3>My Skills</h3>
+                            <div class="skill-container">
+                                <ul class="language-list">
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>C</li>
+                                    <li>Kotlin</li>
+                                    <li>JavaScript</li>
+                                    <li>VSCode</li>
+                                    <li>Linux</li>
+                                    <li>IntelliJ</li>
+                                    <li>Git</li>
+                                    <li>Jupyter</li>
+                                    <li>JUnit</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="section-pad">
+                <div class="main-container">
+                    <div class="projects header">
+                        <h2 class="projects title">Projects</h2>
+                        <span>Here are some examples of my projects</span>
+                    </div>
+                    <div class="projects-container">
+                        <a class="project-tile" target="_blank" href="https://github.com/eblankenship27/eblankenship27.github.io.git">
+                            <img class="project-image" src="assets/Portfolio_project.png" alt="Project"/>
+                            <p class="project-title">Portfolio Website</p>
+                        </a>
+                        <a class="project-tile" target="_blank" href="https://github.com/eblankenship27/calico-cut-pants-product-page.git">
+                            <img class="project-image" src="assets/Product_page_project.png" alt="Project"/>
+                            <p class="project-title">Product Page</p>
+                        </a>
+                        <a class="project-tile" target="_blank" href="https://github.com/eblankenship27/tribute-page.git">
+                            <img class="project-image" src="assets/Tribute_page_project.png" alt="Project"/>
+                            <p class="project-title">Tribute Page</p>
+                        </a>
+                        <a class="project-tile" target="_blank">
+                            <img class="project-image" alt="Project"/>
+                            <p class="project-title">Coming Soon...</p>
+                        </a>
+                    </div>
+                    <a class="see_more button btn-mv" target="_blank" href="https://github.com/eblankenship27">See more</a>
+                </div>
+            </section>
+            <section id="contact" class="section-pad" >
+                <div class="main-container">
+                    <div class="contact header">
+                        <h2 class="contact title">Contact Me</h3>
+                        <span>Use the form below to send me a message, or just click the links beneath it</span>
+                    </div>
+                    <form action="" method="post" name="contact_form" class="contact_form">
+                        <label for="name" class="contact-label">Name</label>
+                        <input name="name" id="name" class="input" type="text" placeholder="Enter your Name" required />
+                        <label for="number" class="contact-label">Phone Number</label>
+                        <input name="number" class="input" type="tel" placeholder="Enter your Phone Number" />
+                        <label for="email" class="contact-label">Email</label>
+                        <input name="email" class="input" type="email" placeholder="Enter your Email" required />
+                        <label for="message" class="contact-label">Message</label>
+                        <textarea name="message" class="input" rows="7" type="text" placeholder="Enter your Message" required></textarea>
+                        <button  class="input button btn-mv"  id="submit">Submit</button>
+                    </form>
+                </div>
+                <br>
+                <div class="main-container">
+                    <h3 class="sub-title">Links</h3>
+                    <div class="links">
+                        <a target="_blank" href="www.linkedin.com/in/evanblankenship27" class="btn-mv">   
+                            <i class="devicon-linkedin-plain media-links"></i>
+                        </a>
+                        <a target="_blank" href="https://github.com/eblankenship27" class="btn-mv">            
+                            <i class="devicon-github-original media-links"></i>
+                        </a>
+                        <a target="_blank" href="mailto:blankenship.e@northeastern.edu" class="btn-mv">
+                            <i class="fas fa-envelope media-links"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <div class="main-container footer" >
+                <div class="footer-upper">
+                    <div class="left">
+                        <h4>Evan Blankenship</h4>
+                        <p>A current Computer Science student and apsiring software developer</p>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="right">
+                        <h4>Socials</h4>
+                        <div class="footer-links">
+                            <a target="_blank" href="www.linkedin.com/in/evanblankenship27" class="btn-mv">   
+                                <i class="devicon-linkedin-plain small-links"></i>
+                            </a>
+                            <a target="_blank" href="https://github.com/eblankenship27" class="btn-mv">            
+                                <i class="devicon-github-original small-links"></i>
+                            </a>
+                            <a target="_blank" href="mailto:blankenship.e@northeastern.edu" class="btn-mv">
+                                <i class="fas fa-envelope small-links"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="spliter"></div>
+                <div class="footer-lower">
+                    <p>Made by Evan Blankenship</p>
+                </div>
             </div>
-            <div class="skills">
-                <h2>Computer Knowledge</h2>
-                <h4>Launguages</h4>
-                <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>C</li>
-                    <li>HTML</li>
-                    <li>Kotlin</li>
-                    <li>Assembly</li>
-                </ul>
-                <h4>OS and Software</h4>
-                <ul>
-                    <li>Linux Terminal</li>
-                    <li>IntelliJ</li>
-                    <li>GitHub</li>
-                    <li>VSCode</li>
-                    <li>Vim</li>
-                </ul>
-            </div>
-        </div>
-        <div id="contact">
-            <h2>Contacts</h2>
-            <ol>
-                <li>Email me at: <a href="mailto:blankenship.e@northeastern.edu" target="_blank">blankenship.e@northeastern.edu</a></li>
-                <li>Find me on <a href="www.linkedin.com/in/evanblankenship27" target="_blank">LinkedIn</a>!</li>
-                <li>Link to my <a href="eblankenship27.github.io">website</a></li>
-            </ol>
-        </div>
+        </footer>
+        <script src="form.js"></script>
     </body>
 </html>
