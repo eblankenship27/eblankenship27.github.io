@@ -5,12 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scalce=1.0">
         <title>Evan Blankenship Portfolio Website</title>
         <link rel="stylesheet" href="style.css" >
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            crossorigin="anonymous"
+        />
     </head>
     <body>
         <header class="header">
             <div class="header_content">
                 <div class="header_logo"><a href="./">
-                    <img src="assets/Evan_Blankenship.jpg" class="header_logo_content" />
+                    <img src="assets/Evan_Blankenship_zoomed.jpg" class="header_logo_content" />
                     <h2 class="header_logo_content">Evan Blankenship</h2>
                 </a></div>
                 <div class="nav">
@@ -26,7 +32,7 @@
             </div>
         </header>
         <main>
-            <section id="welcome-section" class="sec-pad">
+            <section id="welcome-section" class="section-pad">
                 <div class="home-section">
                     <div id="welcome-info">
                         <h1 class="home-name">Hello, I'm Evan Blankenship</h1>
@@ -34,14 +40,14 @@
                             A current Computer Science student and aspiring software developer
                         </p>
                     </div>
-                    <div id="button" class="home-button">
+                    <div id="button" class="home-button btn-mv">
                         <a class="button" href="#projects">
                             Projects
                         </a>
                     </div> 
                 </div>
             </section>
-            <section id="about" class="sec-pad">
+            <section id="about" class="section-pad">
                 <div class="main-container about">
                     <div class="about header">
                         <h2 class="about title">About Me</h2>
@@ -51,7 +57,7 @@
                         <div class="know-me">
                             <h3>Get to know me</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, modi ipsam sed officiis labore explicabo ad deleniti recusandae laborum dignissimos tempora, itaque voluptate expedita placeat voluptatem velit suscipit distinctio natus.</p>
-                            <a href="#contact" class="button button-contact">Contact</a>
+                            <a href="#contact" class="button button-contact btn-mv">Contact</a>
                         </div>
                         <div class="skills">
                             <h3>My Skills</h3>
@@ -77,7 +83,7 @@
                     </div>
                 </div>
             </section>
-            <section id="projects" class="sec-pad">
+            <section id="projects" class="section-pad">
                 <div class="main-container">
                     <div class="projects header">
                         <h2 class="projects title">Projects</h2>
@@ -101,41 +107,74 @@
                             <p class="project-title">Coming Soon...</p>
                         </a>
                     </div>
-                    <a class="see_more button" target="_blank" href="https://github.com/eblankenship27">See more</a>
+                    <a class="see_more button btn-mv" target="_blank" href="https://github.com/eblankenship27">See more</a>
                 </div>
             </section>
-            <section id="contact" >
+            <section id="contact" class="section-pad" >
                 <div class="main-container">
-                    <h3>Contact Me</h3>
-                    <p>Use the form below to send me a </p>
-                    <form action="" method="post" name="contact_form">
-                        <input name="name" type="text" placeholder="Name" required />
-                        <input name="number" type="tel" placeholder="Phone Number" />
-                        <input name="email" type="email" placeholder="Email" required />
-                        <textarea name="message" rows="7" type="text" placeholder="Enter your message" required></textarea>
-                        <input type="submit" value="Submit" id="submit">
+                    <div class="contact header">
+                        <h2 class="contact title">Contact Me</h3>
+                        <span>Use the form below to send me a message, or just click the links beneath it</span>
+                    </div>
+                    <form action="" method="post" name="contact_form" class="contact_form">
+                        <label for="name" class="contact-label">Name</label>
+                        <input name="name" id="name" class="input" type="text" placeholder="Enter your Name" required />
+                        <label for="number" class="contact-label">Phone Number</label>
+                        <input name="number" class="input" type="tel" placeholder="Enter your Phone Number" />
+                        <label for="email" class="contact-label">Email</label>
+                        <input name="email" class="input" type="email" placeholder="Enter your Email" required />
+                        <label for="message" class="contact-label">Message</label>
+                        <textarea name="message" class="input" rows="7" type="text" placeholder="Enter your Message" required></textarea>
+                        <button  class="input button btn-mv"  id="submit">Submit</button>
                     </form>
-                    <script src="form.js"></script>
                 </div>
+                <br>
                 <div class="main-container">
-                    <h3>Links</h3>
+                    <h3 class="sub-title">Links</h3>
                     <div class="links">
-                        <a></a>
+                        <a target="_blank" href="www.linkedin.com/in/evanblankenship27" class="btn-mv">   
+                            <i class="devicon-linkedin-plain media-links"></i>
+                        </a>
+                        <a target="_blank" href="https://github.com/eblankenship27" class="btn-mv">            
+                            <i class="devicon-github-original media-links"></i>
+                        </a>
+                        <a target="_blank" href="mailto:blankenship.e@northeastern.edu" class="btn-mv">
+                            <i class="fas fa-envelope media-links"></i>
+                        </a>
                     </div>
                 </div>
 
             </section>
         </main>
         <footer>
-            <div class="main-container" >
+            <div class="main-container footer" >
                 <div class="footer-upper">
-                    <h4>Evan Blankenship</h4>
-                    <p>A current Computer Science student and apsiring software developer</p>
+                    <div class="left">
+                        <h4>Evan Blankenship</h4>
+                        <p>A current Computer Science student and apsiring software developer</p>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="right">
+                        <h4>Socials</h4>
+                        <div class="footer-links">
+                            <a target="_blank" href="www.linkedin.com/in/evanblankenship27" class="btn-mv">   
+                                <i class="devicon-linkedin-plain small-links"></i>
+                            </a>
+                            <a target="_blank" href="https://github.com/eblankenship27" class="btn-mv">            
+                                <i class="devicon-github-original small-links"></i>
+                            </a>
+                            <a target="_blank" href="mailto:blankenship.e@northeastern.edu" class="btn-mv">
+                                <i class="fas fa-envelope small-links"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+                <div class="spliter"></div>
                 <div class="footer-lower">
                     <p>Made by Evan Blankenship</p>
                 </div>
             </div>
         </footer>
+        <script src="form.js"></script>
     </body>
 </html>
