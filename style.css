@@ -431,6 +431,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    max-width: none;
     height: auto;
 }
 
