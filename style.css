@@ -388,6 +388,7 @@ header {
 
 .contact_form > textarea {
     resize: none;
+    font-family: inherit;
 }
 
 #submit {
