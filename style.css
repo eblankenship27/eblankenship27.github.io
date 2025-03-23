@@ -265,10 +265,10 @@ header {
 }
 
 .know-me > p {
-    font-size: 1.3rem;
-    margin-bottom: 4rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
     line-height: 180%;
-    letter-spacing: 0.8px;
+    letter-spacing: 1px;
 }
 
 .button-contact {
@@ -293,7 +293,7 @@ header {
 
 .language-list > li {
     padding: 1rem 2rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin: 0.75rem;
     background: #1b1b27;
     border-radius: 5px;
